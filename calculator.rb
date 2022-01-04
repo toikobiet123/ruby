@@ -13,27 +13,23 @@ if operator == 0
         so2 = gets.chomp.to_i
     result = so1 + so2
     puts "Kết quả của phép + là : " + result.to_s
-else 
-    if operator == 1
-        puts "Sử dụng phép trừ"
-        puts "Mời bạn nhập số thứ nhất: "
-        so1 = gets.chomp.to_i
-        puts "Mời bạn nhập số thứ hai: "
-        so2 = gets.chomp.to_i
-        result1 = so1 - so2
-        puts "Kết quả của phép - là: " + result1.to_s
-    end
-end
-if operator == 2
-    puts "Sử dụng phép nhân"
+elsif operator == 1
+    puts "Sử dụng phép trừ"
+    puts "Mời bạn nhập số thứ nhất: "
+    so1 = gets.chomp.to_i
+    puts "Mời bạn nhập số thứ hai: "
+    so2 = gets.chomp.to_i
+    result1 = so1 - so2
+    puts "Kết quả của phép - là: " + result1.to_s
+elsif operator == 2
+    puts "Sử dụng phép nhân "
     puts "Mời bạn nhập số thứ nhất: "
     so1 = gets.chomp.to_i
     puts "Mời bạn nhập số thứ hai: "
     so2 = gets.chomp.to_i
     result2 = so1 * so2
     puts "Kết quả của phép nhân là: " + result2.to_s
-end
-if operator == 3
+elsif operator == 3
     puts "Sử dụng phép chia "
     puts "Mời bạn nhập số thứ nhất: "
     so1 = gets.chomp.to_f
@@ -41,7 +37,9 @@ if operator == 3
     so2 = gets.chomp.to_f
     result3 = so1 / so2
     puts "Kết quả của phép chia là: " + result3.to_s
-end
+else
+    puts "Error!"           
+end   
 
 
 
