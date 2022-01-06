@@ -48,7 +48,6 @@ case operator
     break       
 else
     puts "Xin mời nhập lại"
-    break           
     end   
 end
 
