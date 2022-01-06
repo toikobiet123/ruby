@@ -4,7 +4,7 @@ puts "0 là + "
 puts "1 là - "
 puts "2 là x "
 puts "3 là % "
-operator = gets.chomp.to_i
+while operator = gets.chomp.to_i 
 
 case operator
     when  0
@@ -15,15 +15,18 @@ case operator
     so2 = gets.chomp.to_i
     result = so1 + so2
     puts "Kết quả của phép + là : " + result.to_s
-    when   1
+    break
 
+    when   1
     puts "Sử dụng phép trừ"
     puts "Mời bạn nhập số thứ nhất: "
     so1 = gets.chomp.to_i
     puts "Mời bạn nhập số thứ hai: "
     so2 = gets.chomp.to_i
     result1 = so1 - so2
-    puts "Kết quả của phép - là: " + result1.to_s    
+    puts "Kết quả của phép - là: " + result1.to_s  
+    break
+
     when    2
     puts "Sử dụng phép nhân "
     puts "Mời bạn nhập số thứ nhất: "
@@ -32,18 +35,22 @@ case operator
     so2 = gets.chomp.to_i
     result2 = so1 * so2
     puts "Kết quả của phép nhân là: " + result2.to_s
-   
-    when   3 
+    break
+    when    3
+
     puts "Sử dụng phép chia "
     puts "Mời bạn nhập số thứ nhất: "
     so1 = gets.chomp.to_f
     puts "Mời bạn nhập số thứ hai: "
     so2 = gets.chomp.to_f
     result3 = so1 / so2
-    puts "Kết quả của phép chia là: " + result3.to_s      
+    puts "Kết quả của phép chia là: " + result3.to_s
+    break       
 else
-    puts "Error!"           
-end   
+    puts "Xin mời nhập lại"
+    break           
+    end   
+end
 
 
 
