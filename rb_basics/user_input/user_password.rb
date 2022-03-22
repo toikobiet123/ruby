@@ -5,7 +5,7 @@ loop do
   user_test = gets.chomp
   puts ">>please enter your password:"
   password_test = gets.chomp
-  if user_name == user_test || password_test == password
+  if user_name == user_test && password_test == password
     break
     puts "Authorization failed!"
   end
